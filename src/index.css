@@ -1,0 +1,209 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 991px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.d-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.d-flex {
+  display: flex;
+}
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.between-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.column-flex {
+  flex-direction: column;
+}
+.p-relative {
+  position: relative;
+}
+.p-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ver-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hor-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.c-white {
+  color: white;
+}
+.c-black {
+  color: black;
+}
+.bg-black {
+  background-color: black;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-red {
+  background-color: red;
+}
+.bg-blue {
+  background-color: blue;
+}
+.bg-green {
+  background-color: green;
+}
+.bg-yellow {
+  background-color: yellow;
+}
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.h-screen {
+  height: 100vh;
+}
+body {
+  background-color: #f1f1f1;
+}
+main {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.title {
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  position: relative;
+  color: rgb(0, 0, 29);
+  width: fit-content;
+  margin: 0px auto 40px;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 4px;
+  background-color: lightblue;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tours {
+  width: 620px;
+}
+.tours .tour {
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+}
+.tour .image {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+.tour .text-box {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.tour .text-box .info {
+  margin-bottom: 30px;
+}
+.tour .text-box .info h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: rgb(0, 0, 29);
+}
+.tour .text-box .info p {
+  padding: 5px 20px;
+  background-color: #ebf7ff;
+  color: #49a6e9;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 800;
+  word-spacing: 5px;
+  border-radius: 4px;
+}
+.tour .text-box .description {
+  color: #617d98;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.tour .text-box .description .toggle-p {
+  border: none;
+  background-color: transparent;
+  color: #49a6e9;
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.btn {
+  width: 70%;
+  padding: 15px 0px;
+  color: brown;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+  border: 1px solid brown;
+  background-color: white;
+  align-self: center;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: brown;
+  color: white;
+}
